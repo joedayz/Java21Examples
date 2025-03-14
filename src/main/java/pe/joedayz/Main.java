@@ -1,12 +1,13 @@
 package pe.joedayz;
-
+//import java.lang.*;
 import java.util.Random;
+import pe.joedayz.people.Owner;
 
 /**
  * @author josediaz
  **///TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class Main   {
 
   String name;
 
@@ -17,6 +18,10 @@ public class Main {
     // to see how IntelliJ IDEA suggests fixing it.
     Random random = new Random();
     Product product = new Product();
+
+    //Dummy d = new Dummy();
+    Owner owner = new Owner();
+    //owner.name;
 
   }
 }
