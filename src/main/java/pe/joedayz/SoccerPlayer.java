@@ -3,7 +3,7 @@ package pe.joedayz;
 /**
  * @author josediaz
  **/
-public class SoccerPlayer extends Object{
+public class SoccerPlayer {
 
   String name;
 
