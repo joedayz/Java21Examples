@@ -1,7 +1,7 @@
-package pe.joedayz;
+package pe.joedayz.intro;
 //import java.lang.*;
 import java.util.Random;
-import pe.joedayz.people.Owner;
+import pe.joedayz.intro.people.Owner;
 
 /**
  * @author josediaz

@@ -1,7 +1,7 @@
-package pe.joedayz.people;
+package pe.joedayz.intro.people;
 
 
-import pe.joedayz.animals.*;
+import pe.joedayz.intro.animals.*;
 
 
 /**

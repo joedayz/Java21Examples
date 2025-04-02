@@ -1,8 +1,6 @@
-package pe.joedayz;
+package pe.joedayz.intro;
 
 import java.text.NumberFormat;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
 /**

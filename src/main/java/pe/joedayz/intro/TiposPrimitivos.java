@@ -1,6 +1,4 @@
-package pe.joedayz;
-
-import java.sql.SQLOutput;
+package pe.joedayz.intro;
 
 /**
  * @author josediaz

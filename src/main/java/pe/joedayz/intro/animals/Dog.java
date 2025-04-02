@@ -1,4 +1,4 @@
-package pe.joedayz.animals;
+package pe.joedayz.intro.animals;
 
 /**
  * @author josediaz

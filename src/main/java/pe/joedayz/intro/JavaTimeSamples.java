@@ -1,4 +1,4 @@
-package pe.joedayz;
+package pe.joedayz.intro;
 
 import java.time.LocalDate;
 import java.time.Period;

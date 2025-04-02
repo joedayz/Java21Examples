@@ -1,6 +1,6 @@
-package pe.joedayz.b;
+package pe.joedayz.intro.b;
 
-import pe.joedayz.a.X;
+import pe.joedayz.intro.a.X;
 
 /**
  * @author josediaz
