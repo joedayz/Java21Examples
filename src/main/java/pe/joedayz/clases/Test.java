@@ -13,7 +13,7 @@ public class Test {
 
         double valor = random();
 
-        ZoneId.of("America/Lima")
+        ZoneId.of("America/Lima");
 
     }
 }
