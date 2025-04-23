@@ -1,11 +1,57 @@
 package pe.joedayz.herencia;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
 public class Product {
     private int id;
     private String name;
     private BigDecimal price;
+    private BigDecimal discount;
+
+    {
+        System.out.println("4.1. Inicializando instancia product...");
+    }
+
+
+    {
+        System.out.println("4.2. Inicializando instancia product...");
+    }
+
+    static {
+        System.out.println("2. Static Inicializando product ...");
+    }
+
+    public Product(String name){
+        this.name = name;
+    }
+
+    public void order(Product product) {
+        if(product instanceof Food f && f.getBestBefore().isBefore(LocalDateTime.now())) {
+
+        }
+        //if(product instanceof Food f || f.getBestBefore().isBefore(LocalDateTime.now())) {}
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+
+    public BigDecimal getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(BigDecimal discount) {
+        this.discount = discount;
+    }
 
     public int getId() {
         return id;
@@ -52,4 +98,9 @@ public class Product {
 
     }
 
+
+
+    {
+        System.out.println("4.3. Inicializando instancia product...");
+    }
 }
