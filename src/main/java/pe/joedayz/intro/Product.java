@@ -4,6 +4,9 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.Period;
 
+import static java.lang.Math.random;
+
+//import java.lang.*;
 /**
  * @author josediaz
  **/
@@ -11,14 +14,24 @@ public class Product {
 
   //variables de instancia - valor por defecto
   private int id;  //0
+    public static final int MAX_EXPITY_PERIOD = 5;
   private final BigDecimal price = BigDecimal.ZERO;  //null
-  private final String name = "Tea";  //null
+  private final String name = "abc";  //null
   private LocalDate bestBefore = LocalDate.now().plusDays(3);
   private boolean active; //false
- // private var String cadena;
+    private  String cadena; //null
   private static Period defaultExpiryPeriod = Period.ofDays(3);
 
-  public static void setDefaultExpiryPeriod(Period defaultExpiryPeriod) {
+//    {
+//        name  = "Abc";
+//    }
+
+//
+//    public Product(String name) {
+//        this.name = name;
+//    }
+
+    public static void setDefaultExpiryPeriod(Period defaultExpiryPeriod) {
     Product.defaultExpiryPeriod = defaultExpiryPeriod;
 
   }
@@ -28,12 +41,28 @@ public class Product {
     System.out.println(Product.defaultExpiryPeriod);
     Product.setDefaultExpiryPeriod(defaultExpiryPeriod);
 
-//    Product p1 = new Product();
-//    p1.getDiscount(BigDecimal.ONE);
-//    p1.setDefaultExpiryPeriod(defaultExpiryPeriod);
+    Product p1 = new Product();
+    p1.getDiscount(BigDecimal.ONE);
+    p1.setDefaultExpiryPeriod(defaultExpiryPeriod);
 
+    Product p2 = new Product();
+    Product p3 = new Product();
+    Product p4 = new Product();
+
+      System.out.println(Product.defaultExpiryPeriod); //la forma comun de llamar a un static
+
+      System.out.println(p4.defaultExpiryPeriod); //no es la forma comun - NO ES BUENA PRACTICA
+
+      System.out.println(Product.MAX_EXPITY_PERIOD);
+
+      System.out.println(random());
   }
 
+  public void someOperation(int param){
+      var value1 = "hello"; //infiere que es String
+      var value2 = param; //infiere es int
+        //static var i = 5;
+  }
 
   //Bloque de iniciacion de instancia
 //  {
@@ -64,6 +93,7 @@ public class Product {
       return dummy;
     }
 
+
     {
       String teen = "Teen";
     }
@@ -80,22 +110,6 @@ public class Product {
     String feedback = "Good!";
     return feedback;
   }
-//
-//  public static void main(String[] args) {
-////    Product product = new Product();
-////    product.setPrice(BigDecimal.valueOf(100));
-////    System.out.println(product.getPrice());
-//     new Product();
-//     final Product p1 = new Product();
-//     final Product p2 = new Product();
-//     Product p3 = p2;
-////     p1.setName("Tea");
-////     p2.setName("Cake");
-//    System.out.println(p1.getName());
-//    System.out.println(p2.getName());
-//    System.out.println(p3.getName());
-//
-//  }
 
 
 }

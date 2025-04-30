@@ -5,6 +5,10 @@ package pe.joedayz.intro;
  **/
 public class Wrappers {
 
+  //byte
+  //short
+  //int
+
   public static void main(String[] args) {
     int a = 42;
     Integer b = Integer.valueOf(a);

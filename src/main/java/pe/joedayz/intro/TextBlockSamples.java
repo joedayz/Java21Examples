@@ -13,11 +13,11 @@ public class TextBlockSamples {
         "English Breakfast"
         """;
 
-    System.out.println(basicText);
+    //System.out.println(basicText);
     System.out.println(textBlock);
 
-    int p1 = basicText.indexOf("price");
+    //int p1 = basicText.indexOf("price");
     int p2 = textBlock.indexOf("price");
-    System.out.println(p1 + " " + p2);
+    System.out.println(p2);
   }
 }

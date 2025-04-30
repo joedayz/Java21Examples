@@ -15,5 +15,12 @@ public class StringBuilderSamples {
     sb3.append("jkl");
     sb3.append("mno");
     System.out.println(sb3);
+
+    sb1.append("tea");
+    sb1.append('s');
+    sb1.insert(3, 'm');
+    sb1.delete(2, 4);
+    sb1.reverse();
+    System.out.println(sb1);
   }
 }

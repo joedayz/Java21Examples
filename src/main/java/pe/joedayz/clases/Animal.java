@@ -16,6 +16,8 @@ public class Animal {
     private final BigDecimal NUMBER_ZERO = BigDecimal.ZERO;
     private static  Period defaulExpiryPeriod ;
 
+
+
     {
         name = "fido";
 
