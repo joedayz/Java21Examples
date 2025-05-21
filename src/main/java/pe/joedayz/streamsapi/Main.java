@@ -82,5 +82,7 @@ public class Main {
 
         // Mostrar resultados
         list.forEach(System.out::println);
+
+
     }
 }
