@@ -1,6 +1,8 @@
 package pe.joedayz.streamsapi;
 
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class FlatMapExample {
@@ -22,7 +24,25 @@ public class FlatMapExample {
         System.out.println(totalTea);
 
 
+        List<Integer> numbers = IntStream.range(0, 10_000_000).boxed().collect(Collectors.toList());
 
+        long count = numbers.parallelStream()
+                .filter(n -> isPrime(n)) // operación costosa
+                .count();
+
+        System.out.println(count);
+    }
+
+    public static boolean isPrime(int n) {
+        if (n <= 1) return false;
+        if (n == 2) return true;
+        if (n % 2 == 0) return false;
+
+        int sqrt = (int) Math.sqrt(n);
+        for (int i = 3; i <= sqrt; i += 2) {
+            if (n % i == 0) return false;
+        }
+        return true;
     }
 }
 
