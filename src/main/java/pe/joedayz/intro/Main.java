@@ -9,7 +9,9 @@ import pe.joedayz.intro.people.Owner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main   {
 
-  String name;
+  //String _name;
+  //String _;
+  //String $name;
 
   //constructores
 

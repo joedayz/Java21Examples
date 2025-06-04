@@ -24,13 +24,13 @@ public class FlatMapExample {
         System.out.println(totalTea);
 
 
-        List<Integer> numbers = IntStream.range(0, 10_000_000).boxed().collect(Collectors.toList());
-
-        long count = numbers.parallelStream()
-                .filter(n -> isPrime(n)) // operación costosa
-                .count();
-
-        System.out.println(count);
+//        List<Integer> numbers = IntStream.range(0, 10_000_000).boxed().collect(Collectors.toList());
+//
+//        long count = numbers.parallelStream()
+//                .filter(n -> isPrime(n)) // operación costosa
+//                .count();
+//
+//        System.out.println(count);
     }
 
     public static boolean isPrime(int n) {
