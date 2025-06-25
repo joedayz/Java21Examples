@@ -3,52 +3,52 @@ package pe.joedayz.operadores;
 public class Operadores {
 
     public static void main(String[] args) {
-//        int a = 1;
-//        int b = a + 4;
-//        int c = b - 2;
-//        int d = c * b;
-//        int e = d / c;
-//        int f = d % e;
 
-//        int a = 1, b = 3;
+//        int a = 3, b = 2;
 //
-//        a += b;
-//        a -=b;
-//        a /=2;
-//        a %= a;
-
-//        int a = 2, b = 3;
-//        int c = b - a * b;
-//        System.out.println(c);
+//        int l = Math.round(a/b); // long, double, float  =
 //
+//        long d = Math.round((double)a/b);
+//
+//        int x = 2;
+//        int y = ~x;  //-3 =   -(x)-1 =  -(2)-1 = -3
+//        System.out.println("y = " + y);
 
-        int a = 1, b = 3;
-        a++; //post increment
-        //a es 2
-        ++a; //pre increment
-        //a es 3
+        int a = 3, b = 2;
+        boolean c = false;
 
-        b = a++; // b es 3
-        System.out.println(b);
-        System.out.println(a); //4
+        c = (a == b);
+        System.out.println("c = (a == b): " + c);
 
-        b = --a; //a = 3 b = 3
-        System.out.println(b);
-        System.out.println(a);
+        c = !(a == b);                     // true
+        System.out.println("c = !(a == b): " + c);
 
-        // byte, short, int , long, float, double
-        // char y boolean
-        byte a1 = 50, b1 = 5;  //-128 a 127
+        c = (a != b);                      // true
+        System.out.println("c = (a != b): " + c);
 
-        byte c1 = (byte)(a1 + b1);
+        c = (a > b);                       // true
+        System.out.println("c = (a > b): " + c);
+
+        c = (a >= b);                      // true
+        System.out.println("c = (a >= b): " + c);
+
+        c = (a < b);                       // false
+        System.out.println("c = (a < b): " + c);
+
+        c = (a <= b);                      // false
+        System.out.println("c = (a <= b): " + c);
+
+        c = (a > b && b == 2);             // true
+        System.out.println("c = (a > b && b == 2): " + c);
+
+        c = (a < b || b == 2);             // true
+        System.out.println("c = (a < b || b == 2): " + c);
 
 
-        float g = a1/b1;
+        c = (a > b ^ b == 2);              // false (true ^ true = false)
+        System.out.println("c = (a > b ^ b == 2): " + c);
 
-        int x = 2;
-        int y = ~x;
 
-        System.out.println(y); //bitwise complement  -(x+1)
 
 
 
