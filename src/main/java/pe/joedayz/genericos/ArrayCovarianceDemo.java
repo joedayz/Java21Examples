@@ -8,11 +8,32 @@ public class ArrayCovarianceDemo {
     }
 }
 
-class Product {}
-class Food extends Product {}
+class Product {
+    String name;
+    double price;
+    Product(String name){
+        this.name = name;
+        this.price = 0.0;
+    }
+    Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+}
+class Food extends Product {
+    Food(){
+        super("ProductName");
+    }
+    Food(String name, double price) {
+        super(name, price);
+    }
+}
 class Drink extends Product {
     String name;
     Drink(String name) {
-        this.name = name;
+        super(name);
+    }
+    Drink(String name, double price) {
+        super(name, price);
     }
 }
